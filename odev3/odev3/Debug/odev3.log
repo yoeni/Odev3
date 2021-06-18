@@ -1,0 +1,7 @@
+﻿  project.cpp
+  tree.cpp
+C:\Users\Administrator\Desktop\odev3\odev3\odev3\tree.cpp(83,17): warning C4566: character represented by universal-character-name '\u00F0' cannot be represented in the current code page (1254)
+C:\Users\Administrator\Desktop\odev3\odev3\odev3\tree.cpp(83,17): warning C4566: character represented by universal-character-name '\u00FD' cannot be represented in the current code page (1254)
+  Generating Code...
+C:\Users\Administrator\Desktop\odev3\odev3\odev3\project.cpp(110): warning C4715: 'dataAl': not all control paths return a value
+  odev3.vcxproj -> C:\Users\Administrator\Desktop\odev3\odev3\Debug\odev3.exe
