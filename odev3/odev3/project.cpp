@@ -54,7 +54,7 @@ bool secimAl(char secim)
     {
         tree = dataAl();
         string ogrenciNo;
-        cout << "Ogrenci numarasini: ";
+        cout << "Ogrenci numarasi: ";
         cin >> ogrenciNo;
 
         tree->ogrenciAra(ogrenciNo);
@@ -67,7 +67,10 @@ bool secimAl(char secim)
     else if (secim == 'S' || secim == 's')
     {
         tree = dataAl();
-        tree->ogrenciSil();
+        string ogrenciNo;
+        cout << "Ogrenci numarasi: ";
+        cin >> ogrenciNo;
+        tree->ogrenciSil(ogrenciNo);
     }
     else if (secim == 'Y' || secim == 'y')
     {

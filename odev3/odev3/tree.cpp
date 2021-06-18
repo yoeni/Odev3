@@ -144,18 +144,15 @@ void Student::postorderTara(Node* root)
 	}
 }
 
-void Student::ogrenciSil()
+void Student::ogrenciSil(string ogrenciNo)
 {
-	string number;
-	cout << "Silinecek ogrencinin numarasini giriniz." << endl;
-	cin >> number;
 
 	Node* rootPtr = root, * upper = NULL;
 	bool bulundu = false;
 	char direction = 'k';
 	while (rootPtr && !bulundu)
 	{
-		int result = strcmp(number.c_str(), rootPtr->number.c_str());
+		int result = strcmp(ogrenciNo.c_str(), rootPtr->number.c_str());
 		if (result < 0)
 		{
 			upper = rootPtr;
@@ -175,13 +172,15 @@ void Student::ogrenciSil()
 			if (direction == 'l')
 			{
 				nodeSil(&upper->leftNode);
+				cout << "Kayit Silindi\n";
 			}
 			else if (direction == 'r')
 			{
 				nodeSil(&upper->rightNode);
+				cout << "Kayit Silindi\n";
 			}
 			else
-				cout << "Silinecek kayit bulunamadi\n";
+				cout << "Kayit bulunamadi\n";
 		}
 	}
 }
@@ -313,6 +312,7 @@ void Student::dosyayaYaz()
 	{
 		preorderYaz(root);
 		fileWriter.close();
+		cout << "Dosya basariyla olusuturldu!"<<endl;
 	}
 
 }

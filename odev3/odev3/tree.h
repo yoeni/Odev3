@@ -17,7 +17,7 @@ struct Student
 	void dosyayaYaz();
 	void preorderYaz(Node*);
 	void agacKur(string path);
-	void ogrenciSil();
+	void ogrenciSil(string ogrenciNo);
 	void ogrenciListele();
 	void inorderTara(Node* root);
 	void preorderTara(Node* root);
